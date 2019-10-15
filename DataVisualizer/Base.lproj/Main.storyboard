@@ -12,8 +12,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DataVisualizer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DrJ-D5-qTB"/>
-                        <viewControllerLayoutGuide type="bottom" id="nXl-VS-Qky"/>
+                        <viewControllerLayoutGuide type="top" id="QJz-yH-Lad"/>
+                        <viewControllerLayoutGuide type="bottom" id="gff-Cm-wr4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="VisualizerView" customModule="DataVisualizer" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
