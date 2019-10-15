@@ -10,15 +10,14 @@ class DataManager {
     
     private init() {}
     
+    static private let currentSource = DataHandlerEnum.test
     static private let sources: [DataHandlerEnum : DataHandlerProtocol] = [
         .test : TestDataHandler()
     ]
     
     static func get(amount: Int, indent: Int) -> [Int] {
-        if let dataArray = sources[DataHandlerEnum.test]?.get(amount, with: indent) {
-            return dataArray.sorted { (lhs, rhs) -> Bool in
-                return lhs.date > rhs.date
-            }.map { (data) -> Int in
+        if let dataArray = sources[currentSource]?.get(amount, with: indent) {
+            return dataArray.map { (data) -> Int in
                 return data.number
             }
         } else {
